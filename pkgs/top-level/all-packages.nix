@@ -21212,6 +21212,13 @@ with pkgs;
     withExamples = false;
     withDocs = false;
   };
+  fltk14-me = fltk14.override {
+    withGL = true;
+    withCairo = false;
+    withPango = true;
+    withExamples = true;
+    withDocs = true;
+  };
   fltk = fltk13;
   fltk-minimal = fltk13-minimal;
 
